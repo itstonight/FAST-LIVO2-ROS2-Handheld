@@ -1,0 +1,38 @@
+/**:
+  ros__parameters:
+
+    # Camera intrinsics  
+    # mid360
+    fx: 1798.6906827048194
+    fy: 1806.4554623331755
+    cx: 687.8883727460286
+    cy: 537.0812439745258
+    k1: -0.04955883040460026
+    k2: 0.26788583044716585
+    p1: 0.002496631181306425
+    p2: -0.00590563307624
+
+
+    # Calibration target parameters
+    marker_size: 0.20 # ArUco marker size (our test data uses 0.16m; adjust to match your marker size)
+    delta_width_qr_center: 0.55 # Half the distance between the centers of two markers in the horizontal direction 
+    delta_height_qr_center: 0.35 # Half the distance between the centers of two markers in the vertical direction
+    delta_width_circles: 0.5 # Distance between the centers of two circles in the horizontal direction
+    delta_height_circles: 0.4 # Distance between the centers of two circles in the vertical direction
+    circle_radius: 0.12 # Radius of the circle 
+
+    # Distance filter
+    x_min: 2.4
+    x_max: 3.5
+    y_min: -0.8
+    y_max: 1.0
+    z_min: 0.6
+    z_max: 2.0
+
+    # Input（请改为你的绝对路径）
+    lidar_topic: "/livox/lidar"
+    bag_path: "/home/juice/code/ros2_ws/fast-livo2/rosbag2_2026_02_08-21_50_33"   # ros2 bag 为目录路径
+    image_path: "/home/juice/code/ros2_ws/fast-livo2/image.png"
+
+    # Output
+    output_path: "/home/juice/code/ros2_ws/fast-livo2/src/FAST-Calib/output"

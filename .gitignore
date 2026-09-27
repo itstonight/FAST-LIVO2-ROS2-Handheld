@@ -1,0 +1,19 @@
+# ROS
+build/
+install/
+log/
+
+# FAST-LIVO2 generated data
+FAST-LIVO2/Log/
+FAST-LIVO2/pics/
+FAST-LIVO2/Supplementary/
+
+# FAST-Calib generated data
+FAST-Calib/output/
+FAST-Calib/pics/
+
+# Large/generated point clouds
+*.pcd
+
+# Compiled libraries
+*.so
